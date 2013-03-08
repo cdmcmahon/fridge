@@ -1,0 +1,48 @@
+.magnet {
+	border: 1px solid black;
+	display: table-cell;
+	padding: 1px 5px;
+	background-color: white;
+	cursor: pointer;
+	position: absolute !important;
+	box-shadow: 1px 1px 1px #808080;
+}
+
+
+.attr {
+  position: absolute !important;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+a.attrtext {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10;
+}
+
+/*
+.box { 
+  background: #000000; 
+}
+.boxtop { 
+  background: url(ne.gif) no-repeat top right; 
+}
+.boxtop div { 
+  font-size: 0;
+  height: 150px; 
+  background: url(nw.gif) no-repeat top left; 
+}
+.boxbottom { 
+  background: url(se.gif) no-repeat bottom right; 
+}
+.boxbottom div { 
+  font-size: 0;
+  height: 150px; 
+  background: url(sw.gif) no-repeat bottom left; 
+}
+.boxcontent {
+  padding: 0px 150px 0px 150px;
+}
+
+*/
