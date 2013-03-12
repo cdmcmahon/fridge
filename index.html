@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-	<link type="text/css" href="css/themename/jquery-ui-1.7.1.custom.css" rel="Stylesheet"/>
+	<!-- <link type="text/css" href="css/themename/jquery-ui-1.7.1.custom.css" rel="Stylesheet"/> -->
 	<meta charset="utf-8">
 	<title>The Fridge</title>
 	<link rel="stylesheet" type="text/css" href="fridge.css">
@@ -10,9 +10,15 @@
 <body>
 	
 	<div style="position: absolute; top: 10px; right: 10px">
-		<input id="newmag_title" type="text" value="Enter magnet name"/>
-		<input id="newmag_button" type="button" value="Add new magnet"/>
+		<input id="newmag_title" type="text" value="Enter magnet name to add/remove" size="35" onclick="this.select()"/>
+		<input id="newmag_button" type="button" value="Add"/>
+		<input id="delete_button" type="button" value="Delete"/>
+		<input id="clearmags_button" type="button" value="Clear all magnets"/>
+		<input id="reset_button" type="button" value="Reset"/>
+
 	</div>
+
+	<div id="magnet_space"></div>
 
 
 	<div class="attr">
@@ -26,10 +32,29 @@
 
 
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/createmags.js"></script>
 	<script type="text/javascript" src="js/jqueryUI.js"></script>
 	<script type="text/javascript" src="js/draggable.js"></script>
 	<script type="text/javascript" src="js/newbutton.js"></script>
+	<script type="text/javascript" src="js/statesaving.js"></script>
 
+
+
+
+
+	<!-- Google Analytics -->
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-23109629-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
 </body>
 </html>

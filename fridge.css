@@ -20,29 +20,3 @@ a.attrtext {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 10;
 }
-
-/*
-.box { 
-  background: #000000; 
-}
-.boxtop { 
-  background: url(ne.gif) no-repeat top right; 
-}
-.boxtop div { 
-  font-size: 0;
-  height: 150px; 
-  background: url(nw.gif) no-repeat top left; 
-}
-.boxbottom { 
-  background: url(se.gif) no-repeat bottom right; 
-}
-.boxbottom div { 
-  font-size: 0;
-  height: 150px; 
-  background: url(sw.gif) no-repeat bottom left; 
-}
-.boxcontent {
-  padding: 0px 150px 0px 150px;
-}
-
-*/
