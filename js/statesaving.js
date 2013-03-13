@@ -1,8 +1,9 @@
 $(document).ready(function() {
 	var saved = localStorage.getItem("savedMagnets");
 	console.log(saved);
+	var saved_array = saved.split(',');
 
-	if(saved == null){
+	if(saved_array.length < 1){
 		var wa2 = new Array("the", "of", "and", "a", "to", "in", "is", "you", "that", "it", "he", "for", "was", 
 			"on",
 		"are", "as", "with", "his", "they", "at", "be", "this", "from", "I", "have", "or", "by", "one", "had",
@@ -50,10 +51,11 @@ $(document).ready(function() {
 			i++;
 		}
 	}
+	else if(saved_array.length == 1)
+	{}
 	else {
-		var saved_array = saved.split(',');
+		
 		for(var i = 0; i < saved_array.length; i = (i+3)){
-			console.log(saved_array);
 			var newmag = document.createElement("div");
 			var newtext = saved_array[i];
 			var newleft = saved_array[(i+1)];
