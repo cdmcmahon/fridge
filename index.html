@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-	
+	<!-- <link type="text/css" href="css/themename/jquery-ui-1.7.1.custom.css" rel="Stylesheet"/> -->
 	<meta charset="utf-8">
 	<title>The Fridge</title>
 	<link rel="stylesheet" type="text/css" href="fridge.css">
@@ -8,13 +8,16 @@
 
 </head>
 <body>
-	
+	<h1 id="title">The Fridge</h1>
+
+
+
 	<div style="position: absolute; top: 10px; right: 10px">
-		<input id="newmag_title" type="text" value="Enter magnet name to add/remove" size="35" onclick="this.select()"/>
-		<input id="newmag_button" type="button" value="Add"/>
-		<input id="delete_button" type="button" value="Delete"/>
-		<input id="clearmags_button" type="button" value="Clear all magnets"/>
-		<input id="reset_button" type="button" value="Reset"/>
+		<input id="newmag_title" class="namefield" type="text" placeholder="Enter magnet name to add/remove" size="32" onclick="this.select()"/>
+		<input id="newmag_button" class="btn" type="button" value="Add"/>
+		<input id="delete_button" class="btn" type="button" value="Delete"/>
+		<input id="clearmags_button" class="btn" type="button" value="Clear all magnets"/>
+		<input id="reset_button" class="btn" type="button" value="Standard magnet set"/>
 
 	</div>
 

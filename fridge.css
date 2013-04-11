@@ -20,3 +20,50 @@ a.attrtext {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 10;
 }
+
+.btn {
+	background-color: #000;
+	color: #fff;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:15px;
+	font-weight: bold;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border: solid black 2px;
+}
+
+.btn:active {
+	background-color: #fff;
+	color: #000;
+	font-family:'Helvetica Neue',sans-serif;
+	font-size:15px;
+	font-weight: bold;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border: solid black 2px;
+}
+
+.namefield {
+	background-color:rgba(0,0,0,0);
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: bold;
+	border: solid black 2px;
+	height: 30px;
+}
+
+#title {
+	font-family:'Helvetica Neue',sans-serif;
+}
+
+
+
+
+
+
+
+
+

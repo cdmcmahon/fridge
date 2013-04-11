@@ -59,7 +59,7 @@ $(document).ready(function() {
 			$(newmag).addClass("magnet").draggable().text(newtext).attr("id", newtext);
 		
 
-			var y = (Math.random() * $(window).height()) - 50;
+			var y = (Math.random() * $(window).height()) - 30;
 			if(y<0){
 				y = 0;
 			}
@@ -69,9 +69,9 @@ $(document).ready(function() {
 				x = 0;
 			}
 
-			if(x>($(window).width() - 490) && y<50){
-				x = x - (Math.random() * 750);
-				y = y + 30;
+			if((x>($(window).width() - 7800) || x<200) && y<60){
+				x = (Math.random() * ($(window).width() - 920)) + 200;
+				y = (Math.random() * $(window).height() - 60) + 60;
 			}
 
 			$(newmag).css({'top': y, 'left': x});
@@ -80,5 +80,12 @@ $(document).ready(function() {
 		}
 
 	})
+
+
+	$("#newmag_title").keyup(function(event){
+	    if(event.keyCode == 13){
+	        $("#newmag_button").click();
+	    }
+	});
 
 });
